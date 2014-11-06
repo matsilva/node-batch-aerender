@@ -50,8 +50,7 @@ if (cluster.isMaster) {
     }
   });
 } else {
-  // Workers can share any TCP connection
-  // In this case its a HTTP server
+ 
   process.on('message', function(index) {
     var renderArgs = [
                 "-project", projectPath,
