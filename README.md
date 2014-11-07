@@ -8,7 +8,7 @@ The time it takes to render frames goes from 0-1s per frame to 20s per frame....
 Essentially this will kill the render process after every composition is rendered and create a new process, which I think will somehow prevent the inevitable bogging down of my machine by After Effects batch render.
 
 
-Update - 11-7-2014
+###Update - 11-7-2014
 ===================
 I was able to keep batch render time down to 0-1s per frame using a synchronous program. Which worked perfectly for rendering one composition after another. 
 
