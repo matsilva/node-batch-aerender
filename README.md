@@ -9,7 +9,6 @@ Essentially this will kill the render process after every composition is rendere
 
 
 ###Update - 11-7-2014
-===================
 I was able to keep batch render time down to 0-1s per frame using a synchronous program. Which worked perfectly for rendering one composition after another. 
 
 But...I got greedy and rewrote the code to use node's cluster module to run multiple renders in parallel using half of the cpus available... Essentially I was able to render 4 videos at once in about 8 minutes time. But his somehow kept the aerendercore process alive, which caused the next round of videos to start bogging down because that process was still kept alive. 
