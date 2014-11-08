@@ -18,3 +18,8 @@ But...I got greedy and rewrote the code to use node's cluster module to run mult
 I plan on fixing that and making sure the associated aerendercore process truly gets killed for a clean slate and keep the parallel times down to 0-1s per frame, FTW!
 
 The goal is to be able to create a mini batch render farm on one pc, spreading the renders across a portion of your computers CPUs.
+
+
+### Additional Observations
+* An additional aerendercore will float around, causing the other aerendercore processess to slow down.
+* When the aerendercore process time reaches > 60 minutes, the process starts slowing down.
